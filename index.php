@@ -11,7 +11,7 @@
     </form>
     <?php
       //get data from the input field in the form
-      $name = $_GET['person'];
+      $name = isset($_GET['person']) ? $_GET['person'] : "George";
       echo $name." is hungry!!";
      ?>
   </body>
